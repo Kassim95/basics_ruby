@@ -21,14 +21,15 @@ end
 
 
 
-def mix(a, b)
-	a = [:toyota, :tesla]
-	b = ["Prius", "Model S"]
-	h = {}
-	a.length.times do |i|
-		h[a[i]] = b[i]
+
+def to_hash(array1, array2)
+	hash = {}
+	i = 0
+	while i <array1.length
+		hash[(array1[i])] = (array2[i])
+	 	i += 1
 	end
-	return hash[]
+	hash
 end
 
 def print 
